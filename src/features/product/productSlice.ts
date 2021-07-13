@@ -23,7 +23,7 @@ export const productSlice = createSlice({
     name: 'products',
     initialState,
     reducers: {
-        GET_PRODUCT: (state, {type, payload}) => { },
+        GET_PRODUCT: (state, { type, payload }) => { },
         GET_PRODUCT_PENDING: (state) => {
             state.status = 'loading'
         },
@@ -33,10 +33,13 @@ export const productSlice = createSlice({
         },
         GET_PRODUCT_REJECTED: (state) => {
             state.status = 'failed'
+        },
+        DELETE_PRODUCT: (state) => {
+            state.product = null
         }
     },
 })
 
-export const { GET_PRODUCT, GET_PRODUCT_PENDING, GET_PRODUCT_FULFILLED, GET_PRODUCT_REJECTED } = productSlice.actions
+export const { GET_PRODUCT, GET_PRODUCT_PENDING, GET_PRODUCT_FULFILLED, GET_PRODUCT_REJECTED, DELETE_PRODUCT } = productSlice.actions
 export default productSlice.reducer
 

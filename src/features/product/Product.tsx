@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from '../../app/hooks'
-import { GET_PRODUCT } from './productSlice'
+import { DELETE_PRODUCT, GET_PRODUCT } from './productSlice'
 import classes from './Product.module.css'
 
 interface ParamType {
@@ -15,6 +15,10 @@ const Product = () => {
 
     useEffect(() => {
         dispatch(GET_PRODUCT(id))
+
+        return () => {
+            dispatch(DELETE_PRODUCT())
+        }
     }, [])
 
     console.log('product', product)
