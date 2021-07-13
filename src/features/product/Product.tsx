@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from '../../app/hooks'
 import { DELETE_PRODUCT, GET_PRODUCT } from './productSlice'
 import classes from './Product.module.css'
+import Button from '../../components/Button'
 
 interface ParamType {
     id?: string
@@ -42,7 +43,7 @@ const Product = () => {
                     {product?.description}
                 </div>
                 <div className={classes.button}>
-                    Button
+                    <Button onClick={() => alert('ciao')}>Add to cart</Button>
                 </div>
             </div>
         </div>

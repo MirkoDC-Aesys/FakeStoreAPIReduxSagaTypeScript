@@ -1,14 +1,20 @@
 .container {
     border: 1px solid gray;
+    border-right: 0;
     width: 80%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    border-right: 1px solid gray;
 }
 
 .img {
-    border-right: 1px solid gray;
-    width: 40%;
     padding: 1rem;
+    flex: 1 0;
+    min-width: 200px;
 }
 
 .img img {
@@ -18,8 +24,9 @@
 }
 
 .content {
-    width: 50%;
     padding: 1rem;
+    flex: 1 0;
+    min-width: 200px;
 }
 
 .content > div {
