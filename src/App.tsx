@@ -9,7 +9,7 @@ import Products from './features/products/Products'
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <h2>Shop</h2>
       <Router>
         <Switch>

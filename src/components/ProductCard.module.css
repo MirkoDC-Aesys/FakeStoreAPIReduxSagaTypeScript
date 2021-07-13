@@ -12,16 +12,25 @@
 
 .img {
     width: 100%;
+    height: 200px;
 }
 
 .img img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .title {
     font-weight: bold;
+    color: var(--color-primary);
 }
 
 .price {
     font-weight: bold;
+    color: var(--color-primary);
+}
+
+.category {
+    color: var(--color-secondary);
 }

@@ -15,11 +15,10 @@ const Products = () => {
     console.log(products)
 
     return (
-        <div>
+        <div className={classes.container}>
             {
                 products.map(product => <ProductCard product={product} key={product.id} />)
             }
-
         </div>
     )
 }
