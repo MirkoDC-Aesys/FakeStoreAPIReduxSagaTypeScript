@@ -1,0 +1,27 @@
+.card {
+    border: 1px solid gray;
+    margin: 1rem;
+    min-width: 200px;
+    width: 20%;
+    padding: 1rem;
+}
+
+.card > div {
+    margin-bottom: 0.1rem;
+}
+
+.img {
+    width: 100%;
+}
+
+.img img {
+    width: 100%;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+}

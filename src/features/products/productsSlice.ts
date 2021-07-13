@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-interface ProductState {
+export interface ProductState {
     id: number,
     title: string,
     price: string,
@@ -9,7 +9,7 @@ interface ProductState {
     image: string
 }
 
-interface ProductsState {
+export interface ProductsState {
     products: ProductState[],
     status: 'idle' | 'loading' | 'failed'
 }
