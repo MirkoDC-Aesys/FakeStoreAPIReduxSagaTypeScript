@@ -6,6 +6,7 @@ import {
   Route
 } from 'react-router-dom'
 import Products from './features/products/Products'
+import Product from './features/product/Product';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Router>
         <Switch>
           <Route path='/' exact component={Products} />
-          <Route path={`/product/:id`} render={() => <div>Product</div>} />
+          <Route path={`/product/:id`} component={Product} />
         </Switch>
       </Router>
     </div>

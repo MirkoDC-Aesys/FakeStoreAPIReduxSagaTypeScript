@@ -1,0 +1,52 @@
+.container {
+    border: 1px solid gray;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.img {
+    border-right: 1px solid gray;
+    width: 40%;
+    padding: 1rem;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.content {
+    width: 50%;
+    padding: 1rem;
+}
+
+.content > div {
+    margin-bottom: 1rem;
+}
+
+.title {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.price {
+    background-color: aqua;
+    border-radius: 10px;
+    color: var(--color-ternary);
+    display: inline-block;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.category {
+    background-color: lightgray;
+    color: var(--color-primary);
+    padding: 1rem;
+}
+
+.description {
+    color: var(--color-secondary);
+}

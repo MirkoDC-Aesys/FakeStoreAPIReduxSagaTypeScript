@@ -1,7 +1,7 @@
 :root {
     --color-primary: #0F1111;
     --color-secondary: #565959;
-    /* --color-ternary: #45A29E; */
+    --color-ternary: #fff;
     --bgcolor-primary: #fff;
     /* --bgcolor-secondary: #1F2833; */
     font-size: 14px;

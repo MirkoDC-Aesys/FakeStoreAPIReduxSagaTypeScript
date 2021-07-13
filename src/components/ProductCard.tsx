@@ -1,9 +1,10 @@
 import React from 'react'
 import classes from './ProductCard.module.css'
-import { ProductsState, ProductState } from '../features/products/productsSlice'
+import { Product } from '../features/product/productSlice'
+import { Link } from 'react-router-dom'
 
 interface Props {
-    product: ProductState
+    product: Product
 }
 
 const ProductCard: React.FC<Props> = ({ product: {
@@ -16,18 +17,20 @@ const ProductCard: React.FC<Props> = ({ product: {
 } }) => {
     return (
         <div className={classes.card}>
-            <div className={classes.img}>
-                <img src={image} alt={title} />
-            </div>
-            <div className={classes.title}>
-                {title}
-            </div>
-            <div className={classes.price}>
-                {price}
-            </div>
-            <div className={classes.category}>
-                {category}
-            </div>
+            <Link to={`product/${id}`}>
+                <div className={classes.img}>
+                    <img src={image} alt={title} />
+                </div>
+                <div className={classes.title}>
+                    {title}
+                </div>
+                <div className={classes.price}>
+                    {price}
+                </div>
+                <div className={classes.category}>
+                    {category}
+                </div>
+            </Link>
         </div>
     )
 }
