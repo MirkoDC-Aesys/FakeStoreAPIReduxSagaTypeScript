@@ -21,7 +21,7 @@ export const cartSlice = createSlice({
             state.products.find(prod => prod.id === payload.id) ?
                 state.products.map(prod => prod.id === payload.id ? prod.amount += 1 : prod)
                 :
-                state.products.push(payload)
+                state.products.push({...payload, amount: 1})
         },
         REMOVE_ONE_PRODUCT: (state, { payload }) => {
             state.products.map(prod => prod.id === payload ? prod.amount > 1 ? prod.amount -= 1 : prod : prod)

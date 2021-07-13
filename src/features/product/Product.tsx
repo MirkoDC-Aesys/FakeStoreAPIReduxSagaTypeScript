@@ -4,6 +4,7 @@ import { useAppDispatch, useAppSelector } from '../../app/hooks'
 import { DELETE_PRODUCT, GET_PRODUCT } from './productSlice'
 import classes from './Product.module.css'
 import Button from '../../components/Button'
+import { ADD_PRODUCT } from '../cart/cartSlice'
 
 interface ParamType {
     id?: string
@@ -43,7 +44,7 @@ const Product = () => {
                     {product?.description}
                 </div>
                 <div className={classes.button}>
-                    <Button onClick={() => alert('ciao')}>Add to cart</Button>
+                    <Button onClick={() => dispatch(ADD_PRODUCT(product))}>Add to cart</Button>
                 </div>
             </div>
         </div>
