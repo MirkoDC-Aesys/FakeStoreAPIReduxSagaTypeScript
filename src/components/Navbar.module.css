@@ -1,0 +1,44 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background-color: var(--bgcolor-secondary);
+}
+
+.title {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.cart {
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.cart i {
+    color: var(--color-primary);
+}
+
+.cart:hover i {
+    color: rgb(228, 9, 9);
+    cursor: pointer;
+}
+
+.circle {
+    position: absolute;
+    top: -0.2rem;
+    right: -0.5rem;
+    color: #000;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: rgb(241, 25, 25);
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    line-height: 1;
+}
