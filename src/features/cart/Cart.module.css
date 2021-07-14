@@ -1,5 +1,5 @@
 .container {
-    padding: 0 1rem;
+    padding: 0 1rem 1rem;
 }
 
 .element {
@@ -47,6 +47,17 @@
     color: red;
 }
 
+.buy {
+    text-align: center;
+}
+
+.empty {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    text-align: center;
+}
+
 @media screen and (min-width: 768px) {
     .element {
         flex-direction: row;
@@ -63,7 +74,7 @@
         margin: 0;
     }
 
-    .buy {
+    .remove {
         margin-left: auto;
         align-self: flex-end;
     }

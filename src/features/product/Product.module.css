@@ -50,7 +50,7 @@
 
 .category {
     background-color: lightgray;
-    color: var(--color-primary);
+    color: #000;
     padding: 1rem;
 }
 

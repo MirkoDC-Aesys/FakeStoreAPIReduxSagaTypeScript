@@ -1,0 +1,116 @@
+.container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+.form_container {
+    flex: 1 0 75%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: var(--bgcolor-secondary);
+    color: var(--color-ternary);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    display: block;
+    font-weight: 500;
+}
+
+.form input[type=text], input[type=number] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.8rem;
+    border: 0;
+    border-radius: 3px;
+    background-color: var(--bgcolor-primary);
+    color: var(--color-primary);
+}
+
+.data_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.billing {
+    padding: 1rem;
+    flex: 1 1 50%;
+}
+
+.billing > div {
+    margin: 0.3rem 0;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: var(--color-primary);
+}
+
+.payment {
+    padding: 1rem;
+    flex: 1 1 50%;
+}
+
+.payment > div {
+    margin: 0.3rem 0
+}
+
+.btn_div {
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .data_wrapper {
+        flex-direction: row;
+    }
+}
+
+.cart_container {
+    flex:25%;
+    padding: 1rem;
+    margin: 0 1rem 1rem;
+    color: var(--color-ternary);
+    background-color: var(--bgcolor-secondary);
+    border-radius: 10px;
+}
+
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.cartItem > div {
+    margin-bottom: 1rem;
+}
+
+.cartItem span {
+    margin-left: 1rem;
+}
+
+.total_price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total_price div {
+    font-weight: bold;
+}
+
+.total_price span {
+    font-weight: bold;
+}

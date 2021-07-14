@@ -4,6 +4,7 @@
     min-width: 200px;
     width: 20%;
     padding: 1rem;
+    border-radius: 10px;
 }
 
 .card > div {

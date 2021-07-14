@@ -9,6 +9,7 @@ import Products from './features/products/Products'
 import Product from './features/product/Product';
 import Navbar from './components/Navbar';
 import Cart from './features/cart/Cart';
+import Buy from './pages/Buy';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/' exact component={Products} />
           <Route path={`/product/:id`} component={Product} />
           <Route path={`/cart`} component={Cart} />
+          <Route path={`/buy`} component={Buy} />
         </Switch>
       </Router>
     </div>
