@@ -24,16 +24,17 @@ const Cart = () => {
                                 Price: ${prod.price}
                             </div>
                             <div>
-                                <Button onClick={() => dispatch(REMOVE_ONE_PRODUCT(prod.id))} style={{padding: '0 0.5rem'}}>-</Button>
-                                Amount: {prod.amount}
-                                <Button onClick={() => dispatch(ADD_PRODUCT(prod))} style={{padding: '0 0.5rem'}}>+</Button>
+                                Amount:
+                                <Button onClick={() => dispatch(REMOVE_ONE_PRODUCT(prod.id))} style={{ padding: '0 0.5rem' }}>-</Button>
+                                {prod.amount}
+                                <Button onClick={() => dispatch(ADD_PRODUCT(prod))} style={{ padding: '0 0.5rem' }}>+</Button>
                             </div>
                             <div className={classes.total}>
                                 Total price:<span> ${(parseFloat(prod.price) * prod.amount).toFixed(2)}</span>
                             </div>
                         </div>
                         <div className={classes.buy}>
-                            <Button onClick={() => {}}>BUY</Button>
+                            <Button onClick={() => { }} style={{padding: '0.4rem', background: 'red'}}>remove</Button>
                         </div>
                     </div>
                 )
