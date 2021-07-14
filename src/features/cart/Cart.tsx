@@ -2,7 +2,7 @@ import React from 'react'
 import { useAppDispatch, useAppSelector } from '../../app/hooks'
 import Button from '../../components/Button'
 import classes from './Cart.module.css'
-import { ADD_PRODUCT, REMOVE_ONE_PRODUCT } from './cartSlice'
+import { ADD_PRODUCT, REMOVE_PRODUCT, REMOVE_ONE } from './cartSlice'
 
 const Cart = () => {
     const dispatch = useAppDispatch()
@@ -25,7 +25,7 @@ const Cart = () => {
                             </div>
                             <div>
                                 Amount:
-                                <Button onClick={() => dispatch(REMOVE_ONE_PRODUCT(prod.id))} style={{ padding: '0 0.5rem' }}>-</Button>
+                                <Button onClick={() => dispatch(REMOVE_ONE(prod.id))} style={{ padding: '0 0.5rem' }}>-</Button>
                                 {prod.amount}
                                 <Button onClick={() => dispatch(ADD_PRODUCT(prod))} style={{ padding: '0 0.5rem' }}>+</Button>
                             </div>
@@ -34,7 +34,7 @@ const Cart = () => {
                             </div>
                         </div>
                         <div className={classes.buy}>
-                            <Button onClick={() => { }} style={{padding: '0.4rem', background: 'red'}}>remove</Button>
+                            <Button onClick={() => dispatch(REMOVE_PRODUCT(prod.id))} style={{ padding: '0.4rem', background: 'red' }}>remove</Button>
                         </div>
                     </div>
                 )
